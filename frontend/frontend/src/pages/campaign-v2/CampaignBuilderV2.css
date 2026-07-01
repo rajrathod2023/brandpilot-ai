@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: radial-gradient(circle at top, #f8f5ef 0%, #f3eee6 45%, #efebe5 100%);
+  color: #111;
+}
+
+.campaign-v2-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #f8f5ef 0%, #f3eee6 45%, #efebe5 100%);
+}
+
+.campaign-v2-hero {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 72px 24px;
+}
+
+.campaign-v2-eyebrow {
+  color: var(--brand-accent, #c9963b);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.campaign-v2-hero h1 {
+  max-width: 980px;
+  margin: 18px auto;
+  text-align: center;
+  font-size: 88px;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-weight: 600;
+  color: #111;
+}
+
+.campaign-v2-description {
+  max-width: 720px;
+  margin: 0 auto 42px;
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Campaign brief */
+
+.campaign-v2-form {
+  max-width: 1100px;
+  margin: 0 auto 72px;
+  padding: 34px;
+  border-radius: 26px;
+  background: #fff;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  text-align: left;
+}
+
+.campaign-v2-form::before {
+  content: "Campaign Brief\A Tell the AI what to build";
+  white-space: pre-line;
+  grid-column: 1 / -1;
+  color: #111;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.campaign-v2-form input {
+  padding: 16px 18px;
+  border: 1px solid #e7dfd4;
+  border-radius: 14px;
+  font-size: 15px;
+  background: #fffaf4;
+}
+
+.campaign-v2-counts {
+  grid-column: 1 / -1;
+  border-top: 1px solid #eee3d4;
+  padding-top: 24px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 28px;
+  align-items: end;
+}
+
+.campaign-v2-counts::before {
+  content: "Output Settings\A Choose campaign amount";
+  white-space: pre-line;
+  font-weight: 800;
+  line-height: 1.5;
+  color: #111;
+  font-size: 17px;
+  padding-bottom: 8px;
+}
+
+.campaign-v2-counts label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #111;
+}
+
+.campaign-v2-counts input {
+  width: 110px;
+  height: 50px;
+  border-radius: 16px;
+  border: 1px solid #e7dfd4;
+  background: #fffaf4;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  padding: 0;
+}
+
+.campaign-v2-form > button {
+  grid-column: 1 / -1;
+  padding: 17px;
+  border: none;
+  border-radius: 14px;
+  background: #111;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Output sections */
+
+.campaign-v2-output-section {
+  margin-top: 56px;
+}
+
+.campaign-v2-section-title {
+  text-align: center;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+  color: #111;
+  margin: 10px 0 34px;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+}
+
+.campaign-v2-empty-message {
+  max-width: 720px;
+  margin: 24px auto;
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+}
+
+/* Social cards */
+
+.campaign-v2-social-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 34px;
+  align-items: stretch;
+}
+
+.campaign-v2-social-output {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.campaign-v2-social-card {
+  width: 100%;
+  min-height: 460px;
+  background: #fff;
+  border-radius: 26px;
+  padding: 32px;
+  box-sizing: border-box;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  max-width: 360px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.campaign-v2-label {
+  color: var(--brand-accent, #c9963b);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.campaign-v2-social-body {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #111;
+  margin: 22px 0;
+  text-align: left;
+}
+
+.campaign-v2-social-footer {
+  margin-top: auto;
+  text-align: left;
+}
+
+.campaign-v2-social-link {
+  margin: 18px 0 16px;
+  color: #111;
+  font-size: 16px;
+  font-weight: 700;
+  word-break: break-word;
+  text-align: left;
+}
+
+.campaign-v2-social-hashtags {
+  margin: 12px 0 0;
+  color: var(--brand-accent, #c9963b);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.campaign-v2-copy-floating-btn {
+  margin-top: 14px;
+  border: none;
+  border-radius: 999px;
+  background: #c89a43;
+  color: #111;
+  padding: 11px 22px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 12px 28px rgba(200, 154, 67, 0.24);
+  transition: all 0.25s ease;
+  font-size: 13px;
+  width: 150px;
+}
+
+.campaign-v2-copy-floating-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+/* Photo outputs */
+
+.campaign-v2-results {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.campaign-v2-photo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.campaign-v2-card {
+  width: 1080px;
+  height: 1350px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 32px;
+  background: #fff;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.campaign-v2-photo-main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 38% 62%;
+}
+
+.campaign-v2-left-panel {
+  background: #fff;
+  padding: 100px 58px 54px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  box-sizing: border-box;
+}
+
+.campaign-v2-left-meta {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 60px;
+}
+
+.campaign-v2-left-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-right: 2px solid var(--brand-accent, #c9963b);
+  padding-right: 14px;
+}
+
+.campaign-v2-left-meta-item:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.campaign-v2-left-meta-item span {
+  color: var(--brand-accent, #c9963b);
+  font-size: 22px;
+  line-height: 1;
+}
+
+.campaign-v2-left-meta-item strong {
+  color: #111;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.campaign-v2-left-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 190px;
+  gap: 22px;
+}
+
+.campaign-v2-left-body p {
+  color: #123024;
+  font-size: 40px;
+  line-height: 1.08;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0;
+  white-space: pre-line;
+}
+
+.campaign-v2-left-footer {
+  border-top: 2px solid var(--brand-accent, #c9963b);
+  padding-top: 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.campaign-v2-left-footer span {
+  color: var(--brand-accent, #c9963b);
+  font-size: 28px;
+}
+
+.campaign-v2-left-footer small {
+  color: #111;
+  font-size: 18px;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.campaign-v2-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.campaign-v2-image img {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+}
+
+.campaign-v2-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background:
+    radial-gradient(circle at top left, rgba(201, 150, 59, 0.25), transparent 35%),
+    linear-gradient(135deg, #211b14, #4b351b);
+  color: #f7ddb0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Download button outside only */
+
+.campaign-v2-download-outside {
+  margin-top: 16px;
+}
+
+.campaign-v2-action-btn,
+.campaign-v2-download-btn {
+  min-width: 150px;
+  height: 46px;
+  border: none;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  font-size: 13px;
+}
+
+.campaign-v2-action-btn:hover,
+.campaign-v2-download-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .campaign-v2-card {
+    width: 100%;
+    height: auto;
+    min-height: 1100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .campaign-v2-form {
+    grid-template-columns: 1fr;
+  }
+
+  .campaign-v2-counts {
+    grid-template-columns: 1fr;
+  }
+
+  .campaign-v2-social-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .campaign-v2-hero h1 {
+    font-size: 44px;
+  }
+
+  .campaign-v2-photo-main {
+    grid-template-columns: 1fr;
+  }
+
+  .campaign-v2-left-panel {
+    padding: 42px 32px;
+  }
+
+  .campaign-v2-left-meta {
+    flex-wrap: wrap;
+    margin-bottom: 42px;
+  }
+
+  .campaign-v2-left-body p {
+    font-size: 40px;
+  }
+
+  .campaign-v2-image {
+    min-height: 520px;
+  }
+}
